@@ -1,0 +1,25 @@
+#place{
+    margin-bottom: 60px;
+    border: 20px solid rgb(103,17,28);
+    background-color:rgb(211,195,180);
+}
+#place>h1{
+    border-bottom: 20px solid rgb(103,17,28);
+    padding:10px;
+    margin: 0;
+    color: darkgray;
+    background-color:rgb(55,50,56);
+}
+#place>div,#place>p{
+    border-left: rgb(201, 204, 159) solid 5px;
+    border-right:rgb(201, 204, 159) solid 5px;
+    width: 90%;
+    margin-left: 4%;
+}
+#place>p{
+    text-indent:25px;
+    text-align: left;
+    padding: 5%;
+    width: 80%;
+    margin: 0 0 0 4%;
+}

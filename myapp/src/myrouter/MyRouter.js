@@ -5,6 +5,7 @@ import Login from'.././components/Login'
 import Index from '.././components/index/Index'
 import History from '.././components/history/History'
 import People from '.././components/people/People'
+import Place from '.././components/place/Place'
 
 class MyRouter extends React.Component{
     render(){
@@ -15,6 +16,7 @@ class MyRouter extends React.Component{
                     <Route path='/index' component={Index}/>
                     <Route exact path='/index/' component={History}/>
                     <Route path='/index/people' component={People}/>
+                    <Route path='/index/place' component={Place}/>
                 </Router>
             </div>
         )

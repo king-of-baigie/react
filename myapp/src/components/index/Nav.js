@@ -20,12 +20,18 @@ class Nav extends React.Component{
             left:obj
         })
     }
-    people(obj){
-        this.props.history.push({pathname:"/index/people",query: {
+    people(obj,num){
+        let query= {
             name : this.props.arr[obj],
             src:this.props.arr1[obj],
             mes:this.props.arr2[obj]
-        }})
+        };
+        if (num===1){
+            this.props.history.push({pathname:"/index/people",query: query})
+        } else {
+            this.props.history.push({pathname:"/index/place",query: query})
+        }
+
     }
     drw(){
         if (this.props.arr[0]==='漩涡鸣人') {
@@ -38,7 +44,7 @@ class Nav extends React.Component{
                 >
                     <List>
                         {this.props.arr.map((text, index) => (
-                           <ListItem button key={index} onClick={this.people.bind(this,index)}>
+                           <ListItem button key={index} onClick={this.people.bind(this,index,1)}>
                                 <ListItemText primary={text} />
                             </ListItem>
                         ))}
@@ -55,7 +61,7 @@ class Nav extends React.Component{
                 >
                     <List>
                         {this.props.arr.map((text, index) => (
-                            <ListItem button key={text}>
+                            <ListItem button key={text} onClick={this.people.bind(this,index,2)} >
                                 <ListItemText primary={text} />
                                 <Divider/>
                             </ListItem>
