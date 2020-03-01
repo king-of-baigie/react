@@ -1,0 +1,19 @@
+#history{
+    background:rgb(184,177,159);
+    border: 20px solid rgb(84,89,82);
+    margin-bottom: 50px;
+}
+#history>h1{
+    margin: 0;
+    border-bottom: 20px solid rgb(84,89,82);
+    padding: 20px;
+    background-color: rgb(206,193,184);
+}
+#history>div{
+    width: 80%;
+    margin-left:5%;
+    border-right: solid 3px rgb(103,86,78);
+    border-left: solid 3px rgb(103,86,78);
+    text-align: left;
+    padding:0 5%;
+}

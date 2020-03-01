@@ -1,0 +1,24 @@
+#people{
+    margin-bottom: 60px;
+    border: 20px solid rgb(131,144,123);
+    background-color: rgb(254,251,216);
+}
+#people>h1{
+    border-bottom: 20px solid rgb(131,144,123) ;
+    padding:10px;
+    margin: 0;
+    background-color: #fffef0;
+}
+#people>div,#people>p{
+    border-left: #8cbfb6 solid 5px;
+    border-right: #8cbfb6 solid 5px;
+    width: 90%;
+    margin-left: 4%;
+}
+#people>p{
+    text-indent:25px;
+    text-align: left;
+    padding: 5%;
+    width: 80%;
+    margin: 0 0 0 4%;
+}
